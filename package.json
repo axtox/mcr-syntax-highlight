@@ -1,0 +1,25 @@
+{
+    "name": "mcr-syntax-highlight",
+    "displayName": "JitBit Macro Recorder File",
+    "description": "IntelliSence for JitBit Macro Recorder .mcr file ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mcr",
+            "aliases": ["JitBit Macro Recorder Script", "mcr"],
+            "extensions": [".mcr"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mcr",
+            "scopeName": "source.mcr",
+            "path": "./syntaxes/mcr.tmLanguage.json"
+        }]
+    }
+}
