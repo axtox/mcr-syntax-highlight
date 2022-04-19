@@ -3,6 +3,9 @@
 	"name": "JitBit Macro Recorder Script",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -10,6 +13,18 @@
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [{
+				"begin": "(COMMENT)( :)",
+				"end": ".*\n",
+				"beginCaptures": {
+					"1": { "name": "comment.line.comment-command.mcr" }
+				},
+				"endCaptures": {
+					"0": { "name": "comment.line.comment-command.mcr" }
+				}
+			}]
+		},
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.mcr",
