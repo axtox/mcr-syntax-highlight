@@ -20,6 +20,15 @@
             "language": "mcr",
             "scopeName": "source.mcr",
             "path": "./syntaxes/mcr.tmLanguage.json"
-        }]
+        }],
+        "configurationDefaults": {
+            "editor.tokenColorCustomizations": {
+                "textMateRules": [{
+                    "scope": "entity.other.macros.mcr",
+                    "settings": {
+                        "foreground": "#ff9900"
+                }
+            }]}
+          }
     }
 }
