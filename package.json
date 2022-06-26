@@ -2,7 +2,9 @@
     "name": "mcr-syntax-highlight",
     "displayName": "JitBit Macro Recorder File",
     "description": "IntelliSence for JitBit Macro Recorder .mcr file ",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "license": "SEE LICENSE IN ./LICENCE",
+    "keywords": ["mcr", "jitbit", "macro recorder"],
     "engines": {
         "vscode": "^1.66.0"
     },
