@@ -79,6 +79,9 @@
 			}, {
 				"name" : "entity.name.variable.mcr",
 				"match": "\\b(disappear|appear|Click|Move|RightClick|LeftButtonDown|LeftButtonUp|RightButtonDown|RightButtonUp|MiddleButtonDown|MiddleButtonUp|Wheel|HorizontalWheel|KeyUp|KeyDown|KeyPress)\\b"
+			}, {
+				"name": "entity.other.macros.mcr",
+				"match": "\\b(PLAY MACRO)\\b"
 				}
 			]
 		}
