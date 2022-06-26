@@ -58,14 +58,31 @@
 				"match": "\\b(SHUTDOWN|BREAKPOINT|PAUSE PLAYBACK)\\b"
 			}]
 		},
+		"escape": {
+			"name": "constant.character.escape.mcr",
+			"match": "\\b({#crlf#})\\b"
+		},
 		"strings": {
-			"name": "string.quoted.double.mcr",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.mcr",
-					"match": "{#crlf#}"
+					"name" : "string.input-instructions.mcr",
+					"match": "(SET|MESSAGE BOX|TYPE).+?:([^:|\n]*?):?[^:|\n]*:?(.+?)",
+					"captures": {
+						"1" : { "name": "string.unquoted.mcr"}
+					},
+					"patterns": [{
+						"include": "#escape"
+					}]
+				},
+				{
+					"name" : "file-path.mcr",
+					"match": "(?<=FILE.+?: )(.+?)(?=( : )|\n)",
+					"captures": {
+						"1" : { "name": "string.unquoted.mcr"}
+					},
+					"patterns": [{
+						"include": "#escape"
+					}]
 				}
 			]
 		},
