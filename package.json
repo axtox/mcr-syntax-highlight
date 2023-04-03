@@ -3,7 +3,7 @@
     "displayName": "JitBit Macro Recorder File",
     "description": "IntelliSence for JitBit Macro Recorder .mcr file ",
     "version": "1.0.0",
-    "license": "SEE LICENSE IN ./LICENSE",
+    "license": "SEE LICENSE IN LICENSE",
     "keywords": ["mcr", "jitbit", "macro recorder"],
     "author": {
         "name" : "Anton Kulikov",
