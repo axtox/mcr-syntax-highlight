@@ -1,9 +1,14 @@
 # Change Log
 
-All notable changes to the "mcr-syntax-highlight" extension will be documented in this file.
+All notable changes to the `Macro Recorder Syntax Highlight` extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+This project uses [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
 
-- Initial release
+## [1.0.0] - 2023-03-04
+
+### Added 
+
+- Macro Recorder Script keywords highlight
+- `IF` \ `ENDIF` and `REPEAT` \ `ENDREPEAT` can be collapsed
+- Quick entry creation using autocomplete pairs feature by typing `: `
