@@ -10,6 +10,7 @@
         "email" : "axtoox@protonmail.com",
         "url": "https://github.com/axtox"
     },
+    "publisher": "axtox",
     "bugs": {
         "url": "https://github.com/axtox/mcr-syntax-highlight/issues",
         "email": "axtoox@protonmail.com"
