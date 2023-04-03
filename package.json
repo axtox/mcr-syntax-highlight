@@ -5,12 +5,26 @@
     "version": "1.0.0",
     "license": "SEE LICENSE IN ./LICENCE",
     "keywords": ["mcr", "jitbit", "macro recorder"],
+    "author": {
+        "name" : "Anton Kulikov",
+        "email" : "axtoox@protonmail.com",
+        "url": "https://github.com/axtox"
+    },
+    "bugs": {
+        "url": "https://github.com/axtox/mcr-syntax-highlight/issues",
+        "email": "axtoox@protonmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/axtox/mcr-syntax-highlight.git"
+    },
     "engines": {
         "vscode": "^1.66.0"
     },
     "categories": [
         "Programming Languages"
     ],
+    "icon": "jitbit-macro-recorder-logo.png",
     "contributes": {
         "languages": [{
             "id": "mcr",
