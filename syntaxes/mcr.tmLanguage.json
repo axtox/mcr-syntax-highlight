@@ -47,9 +47,6 @@
 			"patterns": [{
 				"name": "constant.numeric.mcr",
 				"match": "\\b(\\d+|R\\d+|C\\d+)\\b"
-			}, {
-				"name": "constant.language.mcr",
-				"match": "\\b(s)\\b"
 			}]
 		},
 		"invalids": {
@@ -60,7 +57,7 @@
 		},
 		"escape": {
 			"name": "constant.character.escape.mcr",
-			"match": "\\b({#crlf#})\\b"
+			"match": "({#crlf#})"
 		},
 		"strings": {
 			"patterns": [
@@ -76,7 +73,7 @@
 				},
 				{
 					"name" : "file-path.mcr",
-					"match": "(?<=FILE.+?: )(.+?)(?=( : )|\n)",
+					"match": "(?<=FILE.+?: |PLAY MACRO.+?: )(.+?)(?=( : )|\n)",
 					"captures": {
 						"1" : { "name": "string.unquoted.mcr"}
 					},
@@ -89,7 +86,7 @@
 		"entities" : {
 			"patterns": [{
 				"name": "entity.name.operator.custom-literal.mcr",
-				"match": "\\b(ss)\\b"
+				"match": "(?<=GOTO : |LABEL : )(.+?)\n"
 			},{
 				"name": "entity.other.attribute-name.mcr",
 				"match": "\\b(FOR|FILE|WINDOW|TO|USER|PROCESS|CURSOR|IMAGE|PIXEL|FOUND|COLOR|EQUALS|IN|FOCUS|EXISTS|CLIPBOARD|ITERATION|WEBSITE|MESSAGE|ENVIRONMENT|TEXT|DATE)\\b"
